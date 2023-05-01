@@ -113,9 +113,15 @@ export default function Home() {
       {/*    </p>*/}
       {/*  </a>*/}
       {/*</div>*/}
-      <div className={"header"}>
-        <p>Dan Butcher - <code>dev</code></p>
+      <div className={"main-container"}>
+        <div className={"header"}>
+          <p className={"header-text text-5xl font-mono"}>Dan Butcher.<code>dev</code></p>
+        </div>
+        <div className={"content-frame"}>
+          <p className={"content-text"}>Content</p>
+        </div>
       </div>
+
 
     </main>
   )
