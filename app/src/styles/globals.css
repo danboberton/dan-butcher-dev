@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
-  min-width: 500px;
-  width: auto !important;
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 0 0 0;
 }
 
 :root {
@@ -12,9 +13,9 @@ main {
   --aqua-rgb: 119, 196, 213;
   --space-black-rgb: 21,20,26;
   --space-white-rgb: 252,255,250;
+  --space-blue-rgb: 34,91,130;
+  --space-mag-rgb: 177,100,186;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -42,7 +43,6 @@ main {
 
   background-color: rgb(var(--space-black-rgb));
   background-size: cover;
-  padding-left: 4rem;
 
   /*background: linear-gradient(*/
   /*    to bottom,*/
@@ -54,7 +54,6 @@ main {
 
 .header {
   width: 100%;
-  height: 75px;
   background-color: rgb(var(--space-black-rgb));
   padding: 10px;
 }
@@ -62,15 +61,35 @@ main {
 .header-text {
   color: rgb(var(--space-white-rgb));
   vertical-align: center;
+  font-size: 3rem;
+  font-family: "Fira Code", monospace;
+  font-weight: normal;
+  padding-left: 1rem;
 }
 
 .content-text {
   color: rgb(var(--space-white-rgb));
-  font-family: monospace;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
 }
 
 code {
   font-style: italic;
+  font-weight: normal;
+}
+
+/*Responsiveness*/
+
+@media (width < 600px) {
+  .header-text.responsive {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .content-text.responsive {
+    text-align: center;
+  }
 }
 
