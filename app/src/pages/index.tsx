@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import MainContent from "@/pages/MainContent";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -118,7 +119,7 @@ export default function Home() {
           <p className={"header-text text-5xl font-mono"}>Dan Butcher.<code>dev</code></p>
         </div>
         <div className={"content-frame"}>
-          <p className={"content-text"}>Content</p>
+          <MainContent/>
         </div>
       </div>
 
