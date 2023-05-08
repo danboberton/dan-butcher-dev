@@ -45,20 +45,7 @@ body {
   /*  rgb(var(--background-start-rgb));*/
 }
 
-.header {
-  width: 100%;
-  background-color: rgb(var(--space-black-rgb));
-  padding: 10px;
-}
 
-.header-text {
-  color: rgb(var(--space-white-rgb));
-  vertical-align: center;
-  font-size: 3rem;
-  font-family: "Fira Code", monospace;
-  font-weight: normal;
-  padding-left: 1rem;
-}
 
 .content-text {
   color: rgb(var(--space-white-rgb));
@@ -75,14 +62,10 @@ code {
 /*Responsiveness*/
 
 @media (width < 600px) {
-  .header-text.responsive {
-    font-size: 2rem;
-    text-align: center;
-    padding-left: 0;
-  }
 
   .content-text.responsive {
     text-align: center;
+    font-size: 1.25rem;
   }
 }
 

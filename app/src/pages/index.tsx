@@ -1,6 +1,6 @@
 import {Inter} from 'next/font/google'
 import MainContent from "@/pages/components/MainContent";
-import DanHeader from "@/pages/components/DanHeader";
+import Header from "@/pages/components/Header/Header";
 import MainContainer from "@/pages/components/MainContainer/MainContainer";
 
 const inter = Inter({subsets: ['latin']})
@@ -115,7 +115,7 @@ export default function Home() {
             {/*</div>*/}
             <div className={"main-container responsive"}>
                 <MainContainer>
-                    <DanHeader/>
+                    <Header/>
                     <MainContent/>
                 </MainContainer>
 

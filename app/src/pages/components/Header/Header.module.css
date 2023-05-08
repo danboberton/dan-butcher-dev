@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    background-color: rgb(var(--space-black-rgb));
+    padding: 10px;
+    z-index: 999;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.headerText {
+    color: rgb(var(--space-white-rgb));
+    vertical-align: center;
+    font-size: 3rem;
+    font-family: "Fira Code", monospace;
+    font-weight: normal;
+    padding-left: 1rem;
+}
+
+@media (width < 600px) {
+    .headerText {
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+
