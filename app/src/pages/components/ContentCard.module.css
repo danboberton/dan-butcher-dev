@@ -3,11 +3,3 @@
     max-height: 10rem;
     padding: 2rem 2rem 2rem 2rem;
 }
-
-.blue {
-    background-color: rgba(var(--space-blue-rgb), .5);
-}
-
-.mag {
-    background-color: rgba(var(--space-mag-rgb), .5);
-}
