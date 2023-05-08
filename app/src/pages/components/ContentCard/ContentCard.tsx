@@ -28,7 +28,7 @@ export default function ContentCard({children, index}: Props) {
     }
 
     return (
-        <div className={"content-card " + getRotateColor()}>
+        <div className={`${getRotateColor()} ${styles.contentCard}`}>
             {children}
         </div>
     )

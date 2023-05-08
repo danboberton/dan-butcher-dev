@@ -1,8 +1,11 @@
-.content-card {
+.contentCard {
     display: flex;
-    max-height: 10rem;
     padding: 2rem 2rem 2rem 2rem;
-    border: 2px solid pink;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
 }
 
 .blueContent {

@@ -15,6 +15,7 @@ body {
   --space-white-rgb: 252,255,250;
   --space-blue-rgb: 34,91,130;
   --space-mag-rgb: 177,100,186;
+  --space-gray-rgb: 28,33,55;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,23 +27,15 @@ body {
 }
 
 .main-container {
-  display: block;
-  height: 100vh;
+  justify-content: center;
+  display: flex;
   width: 100vw;
+  background-color: rgb(var(--space-gray-rgb));
 }
 
 .content-frame {
   /*color: rgb(var(--foreground-rgb));*/
-  height: 100%;
-  width: 100%;
-  background-image:
-    radial-gradient(ellipse,  rgba(var(--space-black-rgb), 0), rgba(var(--space-black-rgb), 1)),
-    url("../imgs/cosmic-cliffs.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 
-  background-color: rgb(var(--space-black-rgb));
-  background-size: cover;
 
   /*background: linear-gradient(*/
   /*    to bottom,*/
