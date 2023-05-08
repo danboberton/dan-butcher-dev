@@ -3,6 +3,8 @@
     background-color: rgb(var(--space-black-rgb));
     padding: 10px;
     z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sticky {
@@ -17,6 +19,8 @@
     font-family: "Fira Code", monospace;
     font-weight: normal;
     padding-left: 1rem;
+    white-space: nowrap;
+    ;
 }
 
 @media (width < 600px) {
