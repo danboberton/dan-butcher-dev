@@ -1,0 +1,19 @@
+.content-card {
+    display: flex;
+    max-height: 10rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border: 2px solid pink;
+}
+
+.blueContent {
+    background-color: rgba(var(--space-blue-rgb), .5);
+}
+
+.magContent {
+    background-color: rgba(var(--space-mag-rgb), .5);
+}
+
+.clearContent {
+    background-color: rgba(0,0,0 , 0);
+}
+
