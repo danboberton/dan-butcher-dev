@@ -14,7 +14,6 @@ export default function ContentCard({children, index}: Props) {
         }
 
         const numColorCycles: number = Object.keys(colors).length
-        console.log("There are " + numColorCycles + " possible BG colors")
         switch (index % numColorCycles) {
             case 0:
                 return colors['clear']

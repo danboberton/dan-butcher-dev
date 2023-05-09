@@ -6,7 +6,7 @@ export default function Header({}) {
 
 return (
     <header className={`${styles.sticky} ${styles.header}`}>
-            <div>
+            <div className={styles.titleContainer}>
                 <p className={`${styles.headerText}`}>Dan Butcher.<code>dev</code></p>
             </div>
             <NavBar/>

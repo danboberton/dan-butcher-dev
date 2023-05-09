@@ -1,5 +1,5 @@
 import {Inter} from 'next/font/google'
-import MainContent from "@/pages/components/MainContent";
+import MainContent from "@/pages/components/MainContent/MainContent";
 import Header from "@/pages/components/Header/Header";
 import MainContainer from "@/pages/components/MainContainer/MainContainer";
 
@@ -113,15 +113,10 @@ export default function Home() {
             {/*    </p>*/}
             {/*  </a>*/}
             {/*</div>*/}
-            <div className={"main-container responsive"}>
                 <MainContainer>
                     <Header/>
                     <MainContent/>
                 </MainContainer>
-
-            </div>
-
-
         </main>
     )
 }

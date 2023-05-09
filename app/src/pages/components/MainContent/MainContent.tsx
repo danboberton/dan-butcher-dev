@@ -1,4 +1,6 @@
-import ContentCard from "@/pages/components/ContentCard/ContentCard";
+import styles from "./MainContent.module.css"
+import ContentCard from "@/pages/components/MainContent/ContentCard/ContentCard";
+
 
 export default function MainContent({}){
 
@@ -10,7 +12,7 @@ export default function MainContent({}){
     ]
 
     return(
-        <div className={"content-frame"}>
+        <div className={styles.mainContent}>
             {content.map((value: JSX.Element, index: number):  JSX.Element =>{
                 return (
                     <ContentCard index={index}>

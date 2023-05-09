@@ -20,7 +20,10 @@
     font-weight: normal;
     padding-left: 1rem;
     white-space: nowrap;
-    ;
+}
+
+.titleContainer {
+    flex-grow: 1;
 }
 
 @media (width < 600px) {
