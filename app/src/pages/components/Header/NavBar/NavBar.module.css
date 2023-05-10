@@ -1,0 +1,25 @@
+.NavButton{
+    border: 1px solid white;
+    padding: .25rem .25rem .25rem .25rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 2.5rem;
+    transition: border-radius .15s;
+    transition-timing-function: ease-out;
+}
+
+.NavButton:hover{
+    border-radius: 10px;
+}
+
+.buttonText {
+    color: rgb(var(--space-white-rgb));
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
