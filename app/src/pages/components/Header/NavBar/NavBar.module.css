@@ -4,6 +4,12 @@
     margin-left: .5rem;
     margin-right: .5rem;
     height: 2.5rem;
+    transition: border-radius .15s;
+    transition-timing-function: ease-out;
+}
+
+.NavButton:hover{
+    border-radius: 10px;
 }
 
 .buttonText {

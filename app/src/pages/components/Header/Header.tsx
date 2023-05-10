@@ -1,6 +1,6 @@
 import styles from "./Header.module.css"
 import React, {useState, useEffect} from 'react'
-import NavBar from "@/pages/components/NavBar/NavBar";
+import NavBar from "@/pages/components/Header/NavBar/NavBar";
 
 export default function Header({}) {
 
