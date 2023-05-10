@@ -24,6 +24,8 @@
 
 .titleContainer {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 @media (width < 600px) {

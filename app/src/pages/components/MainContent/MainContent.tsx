@@ -2,18 +2,40 @@ import styles from "./MainContent.module.css"
 import ContentCard from "@/pages/components/MainContent/ContentCard/ContentCard";
 
 
-export default function MainContent({}){
+export default function MainContent({}) {
 
-    const content : JSX.Element[] = [
-        <><p className={"content-text responsive"}>Content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste, maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
-        <><p className={"content-text responsive"}>Content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste, maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
-        <><p className={"content-text responsive"}>Content 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste, maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
-        <><p className={"content-text responsive"}>Content 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste, maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
+    const content: JSX.Element[] = [
+        <><p className={"content-text responsive"}>Content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
+            maiores maxime quia quos reiciendis sequi similique sunt vitae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi fugit nostrum optio placeat quasi
+            repellat vel vitae. Rem sint, vero? Amet consequuntur ea esse hic laboriosam nemo officiis quae, tempora.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate molestias reprehenderit tempora!
+            Aliquid, assumenda dolore et eum laborum molestias nisi numquam omnis provident ratione, rem repudiandae
+            similique suscipit tenetur vitae.</p></>,
+        <><p className={"content-text responsive"}>Content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
+            maiores maxime quia quos reiciendis sequi similique sunt vitae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet animi consectetur consequatur
+            esse ex, expedita fugiat, ipsum iure minima nam nisi repellendus similique sit tempore ut voluptas
+            voluptates?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id ipsam iste labore rem? Accusamus
+            architecto, cum deleniti dolorem earum exercitationem fugiat harum in nesciunt, obcaecati perferendis quasi
+            voluptatum? Dolores.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima necessitatibus repellat soluta. Alias
+            eos facilis nam sunt voluptas voluptatibus. Assumenda consequuntur cupiditate exercitationem nesciunt
+            possimus saepe, sunt tempora voluptatem.</p></>,
+        <><p className={"content-text responsive"}>Content 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
+            maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
+        <><p className={"content-text responsive"}>Content 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
+            maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
     ]
 
-    return(
+    return (
         <div className={styles.mainContent}>
-            {content.map((value: JSX.Element, index: number):  JSX.Element =>{
+            {content.map((value: JSX.Element, index: number): JSX.Element => {
                 return (
                     <ContentCard index={index}>
                         {value}

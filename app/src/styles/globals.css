@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body, main {
   width: 100vw;
   height: 100vh;
-  margin: 0 0 0 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(var(--space-gray-rgb));
+  overflow-x: hidden;
 }
 
 :root {
@@ -25,27 +28,6 @@ body {
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-.main-container {
-  justify-content: center;
-  display: flex;
-  width: 100vw;
-  background-color: rgb(var(--space-gray-rgb));
-}
-
-.content-frame {
-  /*color: rgb(var(--foreground-rgb));*/
-
-
-  /*background: linear-gradient(*/
-  /*    to bottom,*/
-  /*    transparent,*/
-  /*    rgb(var(--background-end-rgb))*/
-  /*  )*/
-  /*  rgb(var(--background-start-rgb));*/
-}
-
-
 
 .content-text {
   color: rgb(var(--space-white-rgb));
@@ -67,5 +49,13 @@ code {
     text-align: center;
     font-size: 1.25rem;
   }
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 

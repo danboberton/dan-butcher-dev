@@ -113,10 +113,13 @@ export default function Home() {
             {/*    </p>*/}
             {/*  </a>*/}
             {/*</div>*/}
+            <div className={"center-content"}>
                 <MainContainer>
                     <Header/>
                     <MainContent/>
                 </MainContainer>
+            </div>
+
         </main>
     )
 }
