@@ -1,0 +1,7 @@
+.hamburgerNav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 20px;
+    top: 40px;
+}

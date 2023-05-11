@@ -1,25 +1,49 @@
 import styles from "./NavBar.module.css"
+import NavButton from "@/pages/components/Header/NavBar/Buttons/NavButton";
+import React, {useEffect, useState} from "react";
+import HamburgerNav from "@/pages/components/Header/NavBar/Buttons/HamburgerNav";
 
-const NavButton = (text: string, link: string): JSX.Element => {
-    const handleClick = () => {
-        window.location.href = link
+export default function NavBar({}): React.ReactNode {
+
+    const isNavHamburgerThreshold = (width: number): boolean => {
+        return width <= 600
     }
 
-    return (
-        <button onClick={handleClick} className={styles.NavButton}>
-            <p className={styles.buttonText}>{text}</p>
-        </button>
-    )
-}
-export default function NavBar({}): JSX.Element {
+    const [navHamburger, setNavHamburger] = useState(false)
 
-    return (
+    useEffect(() => {
+        const handleResize = (): void => {
+            setNavHamburger(isNavHamburgerThreshold(window.innerWidth))
+        }
+        handleResize()
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
+
+    const buttonsContent: JSX.Element = (
+        <>
+            <NavButton title={"About"} link={"test"}/>
+            <NavButton title={"Skills"} link={"test"}/>
+            <NavButton title={"Education"} link={"test"}/>
+            <NavButton title={"Experience"} link={"test"}/>
+            <NavButton title={"Projects"} link={"test"}/>
+        </>
+    )
+
+    const noNavHamburger: JSX.Element = (
         <div className={styles.navContainer}>
-            {NavButton("About", "test")}
-            {NavButton("Skills", "test")}
-            {NavButton("Education", "test")}
-            {NavButton("Experience", "test")}
-            {NavButton("Projects", "test")}
+            {buttonsContent}
         </div>
     )
+
+    const yesNavHamburger: JSX.Element = (
+        <div className={styles.navContainer}>
+            <HamburgerNav >
+                {buttonsContent}
+            </HamburgerNav>
+        </div>
+    )
+
+    return navHamburger ? yesNavHamburger : noNavHamburger
 }
