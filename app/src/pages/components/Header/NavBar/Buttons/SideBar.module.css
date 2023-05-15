@@ -1,0 +1,24 @@
+.sideBarNavHidden {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    top: -200px;
+    z-index: 1;
+    transition: visibility 300ms, opacity 300ms ease-in, top 300ms ease-in;
+}
+
+.sideBarActive {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+    right: 20px;
+    top: 75px;
+    z-index: 1;
+    transition: visibility 500ms, opacity 500ms ease-out, top 500ms ease-out;
+}
+
