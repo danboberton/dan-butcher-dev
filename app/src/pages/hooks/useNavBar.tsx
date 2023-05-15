@@ -42,8 +42,6 @@ export const useSideBar = (sideBarActive: boolean) => {
             <NavButtonsAll/>
         </SideBar>
     )
-
-
 }
 
 export const useTopNavBar: JSX.Element = (

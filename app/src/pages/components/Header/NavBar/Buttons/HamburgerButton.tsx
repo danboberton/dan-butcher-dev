@@ -1,5 +1,4 @@
 import {FaHamburger, FaRegWindowClose} from "react-icons/fa";
-import {GrClose} from "react-icons/gr";
 import {IconContext} from "react-icons";
 import React from "react";
 import styles from "@/pages/components/Header/NavBar/Buttons/HamburgerButton.module.css";
