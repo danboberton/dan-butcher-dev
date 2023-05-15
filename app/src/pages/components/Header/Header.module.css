@@ -1,14 +1,11 @@
 .header {
+    position: sticky;
     width: 100%;
     background-color: rgb(var(--space-black-rgb));
     padding: 10px;
     z-index: 999;
     display: flex;
     flex-wrap: wrap;
-}
-
-.sticky {
-    position: sticky;
     top: 0;
 }
 
