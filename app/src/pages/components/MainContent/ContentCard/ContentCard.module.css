@@ -1,22 +1,86 @@
 .contentCard {
-    display: flex;
+    display: block;
     padding: 1rem 1rem 1rem 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border-radius: 1rem;
+    /*backdrop-filter: blur(5px);*/
 }
 
 .blueContent {
-    background-color: rgba(var(--space-blue-rgb), .5);
+    background-color: rgba(var(--space-blue-rgb), .75);
 }
 
 .magContent {
-    background-color: rgba(var(--space-mag-rgb), .5);
+    background-color: rgba(var(--space-mag-rgb), .75);
 }
 
 .clearContent {
-    background-color: rgba(0,0,0 , 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.subContentContainer {
+    display: flex;
+    justify-content: center;
+}
+.subContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    max-width: 850px;
+    /*backdrop-filter: blur(20px);*/
+    /*filter: drop-shadow(6px 6px 3px rgb(var(--space-gray-rgb)));*/
+    /*border: 3px solid rgb(var(--space-white-rgb));*/
+
+    background:
+    linear-gradient(to right, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 0 0,
+    linear-gradient(to right, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, rgb(var(--space-gray-rgb)) 4px, transparent 4px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.subContent p {
+    color: rgb(var(--space-white-rgb));
+    margin: .5rem;
+}
+
+.subContent code {
+    color: rgb(var(--space-white-rgb));
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-style: normal;
+    font-size: 1.15rem;
+    line-height: 1.45rem;
+}
+
+.subTitle {
+    font-family: "eurostile", sans-serif;
+    font-size: 1.25rem;
+    color: rgb(var(--space-white-rgb));
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contentHeaderContainer {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.iconContainer {
+    justify-content: right;
 }
 

@@ -30,10 +30,28 @@ html, body, main {
 }
 
 .content-text {
+  font-family: "europa", sans-serif;
   color: rgb(var(--space-white-rgb));
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 1rem 1rem 1rem 1rem;
   text-align: left;
+  line-height: 2rem;
+}
+
+.content-title {
+  font-family: "eurostile", sans-serif;
+  font-weight: bold;
+  color: rgb(var(--space-white-rgb));
+  font-size: 1.75rem;
+  text-align: left;
+  display: block;
+  filter: drop-shadow(6px 6px 3px rgb(var(--space-gray-rgb)));
+}
+
+.emphasis {
+  /*font-style: italic;*/
+  font-weight: bold;
+  filter: drop-shadow(4px 4px 3px rgb(var(--space-gray-rgb)));
 }
 
 code {
@@ -46,8 +64,12 @@ code {
 @media (width < 600px) {
 
   .content-text.responsive {
+    font-size: 1rem;
+  }
+
+  .content-title.responsive {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
