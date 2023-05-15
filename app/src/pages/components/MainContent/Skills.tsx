@@ -1,5 +1,4 @@
 import styles from './ContentCard//ContentCard.module.css'
-import {FaGrav} from "react-icons/fa";
 import ContentHeader from "@/pages/components/MainContent/ContentCard/ContentHeader";
 import React from "react";
 import {GiSkills} from "react-icons/gi"

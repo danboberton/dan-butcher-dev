@@ -84,3 +84,20 @@
     justify-content: right;
 }
 
+.feature {
+    padding: 1.25rem;
+    font-size: 1.35rem;
+    font-family: "europa", sans-serif;
+    color: rgb(var(--space-white-rgb));
+}
+
+.projectHeaderContainer {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.gitIconContainer {
+    justify-content: right;
+}

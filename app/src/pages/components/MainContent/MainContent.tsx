@@ -4,6 +4,7 @@ import About from "@/pages/components/MainContent/About";
 import Skills from "@/pages/components/MainContent/Skills";
 import Education from "@/pages/components/MainContent/Education";
 import Experience from "@/pages/components/MainContent/Experience";
+import Projects from "@/pages/components/MainContent/Projects";
 
 
 export default function MainContent({}) {
@@ -13,6 +14,7 @@ export default function MainContent({}) {
         <Skills/>,
         <Education/>,
         <Experience/>,
+        <Projects/>,
         <><p className={"content-text responsive"}>Content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
             maiores maxime quia quos reiciendis sequi similique sunt vitae?
