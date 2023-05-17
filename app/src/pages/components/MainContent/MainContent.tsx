@@ -7,7 +7,7 @@ import Experience from "@/pages/components/MainContent/Experience";
 import Projects from "@/pages/components/MainContent/Projects";
 
 
-export default function MainContent({}) {
+export default function MainContent({}): JSX.Element {
 
     const content: JSX.Element[] = [
         <About/>,

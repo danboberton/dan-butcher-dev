@@ -76,12 +76,11 @@
 
 .contentHeaderContainer {
     width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
 }
 
 .iconContainer {
-    justify-content: right;
+    justify-content: left;
 }
 
 .feature {
@@ -100,4 +99,11 @@
 
 .gitIconContainer {
     justify-content: right;
+    float: left;
+}
+
+.titleContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }

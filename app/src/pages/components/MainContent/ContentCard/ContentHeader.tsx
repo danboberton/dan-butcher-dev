@@ -10,12 +10,15 @@ export default function ContentHeader({title, icon}: Props): JSX.Element{
 
     return(
         <div className={styles.contentHeaderContainer}>
-            <h2 className={"content-title responsive"}>{title}</h2>
             <IconContext.Provider value={{color: "white", size: "4rem"}}>
                 <div className={styles.iconContainer}>
                     {icon}
                 </div>
             </IconContext.Provider>
+            <div className={styles.titleContainer}>
+                <h2 className={"content-title responsive"}>{title}</h2>
+            </div>
+
         </div>
     )
 }
