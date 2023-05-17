@@ -1,6 +1,5 @@
 import styles from "@/pages/components/MainContent/ContentCard/ContentCard.module.css";
 import React from "react";
-import * as url from "url";
 import {BsGithub} from "react-icons/bs";
 import {IconContext} from "react-icons";
 
@@ -19,12 +18,19 @@ export default function SingleProject({title, description, features, gitURL}: Pr
                 <h3 className={styles.subTitle}>{title}</h3>
                 <IconContext.Provider value={{color: "white", size: "2rem"}}>
                     <div className={styles.gitIconContainer}>
-                        <BsGithub/>
+                        <p className={"content-text responsive"}>
+                            src:
+                        </p>
+                        <div className={styles.gitButtonContainer}>
+                            <button className={styles.gitButton}>
+                                <BsGithub/>
+                            </button>
+                        </div>
+
+
                     </div>
                 </IconContext.Provider>
-                <button>
 
-                </button>
             </div>
 
             <p className={"content-text responsive"}> {description}</p>
