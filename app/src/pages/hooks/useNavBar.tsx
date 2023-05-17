@@ -4,17 +4,14 @@ import SideBar from "@/pages/components/Header/NavBar/Buttons/SideBar";
 import NavBar from "@/pages/components/Header/NavBar/NavBar";
 import HamburgerButton from "@/pages/components/Header/NavBar/Buttons/HamburgerButton";
 
-export type NavBarReturn = {
+export interface NavBarContext {
     shouldUseSideBar: boolean,
     sideBarActive: boolean,
     setSideBarActive: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function useNavBar(): {
-    sideBarActive: boolean;
-    shouldUseSideBar: boolean;
-    setSideBarActive: (value: (((prevState: boolean) => boolean) | boolean)) => void
-} {
+
+export default function useNavBar(): NavBarContext {
     const SIDEBAR_THRESHOLD: number = 600
     const [shouldUseSideBar, setShouldUseNavBar] = useState(false)
     const [sideBarActive, setSideBarActive] = useState(false)
@@ -36,25 +33,40 @@ export default function useNavBar(): {
     return {shouldUseSideBar, sideBarActive, setSideBarActive}
 }
 
-export const useSideBar = (sideBarActive: boolean) => {
+export const UseSideBar = ({navBarContext}: {navBarContext: NavBarContext}): JSX.Element => {
     return (
-        <SideBar sideBarActive={sideBarActive}>
+        <SideBar sideBarActive={navBarContext.sideBarActive}>
             <NavButtonsAll/>
         </SideBar>
     )
 }
 
-export const useTopNavBar: JSX.Element = (
-    <NavBar>
-        <NavButtonsAll/>
-    </NavBar>
-)
-
-export const hamburgerInTopNavBar = (sidebarActive: boolean, setSideBarActive: (value: (((prevState: boolean) => boolean) | boolean)) => void) => {
+export const UseTopNavBar = (): JSX.Element => {
 
     return (
         <NavBar>
-            <HamburgerButton sideBarActive={sidebarActive} setSideBarActive={setSideBarActive}/>
+            <NavButtonsAll/>
         </NavBar>
     )
+}
+
+export const HamburgerInTopNavBar = ({navBarContext}: {navBarContext: NavBarContext}): JSX.Element => {
+
+    return (
+        <NavBar>
+            <HamburgerButton sideBarActive={navBarContext.sideBarActive}
+                             setSideBarActive={navBarContext.setSideBarActive}/>
+        </NavBar>
+    )
+}
+
+export const TopNavOrHamburger = ({navBarContext}: {navBarContext: NavBarContext}): JSX.Element => {
+
+    return !navBarContext.shouldUseSideBar ? <UseTopNavBar/> :
+        <HamburgerInTopNavBar navBarContext={navBarContext}/>
+}
+
+export const Sidebar = ({navBarContext}: {navBarContext: NavBarContext}): JSX.Element => {
+
+    return navBarContext.shouldUseSideBar ? <UseSideBar navBarContext={navBarContext}/> : <></>
 }
