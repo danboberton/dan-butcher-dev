@@ -27,7 +27,6 @@
 
 @media (width < 600px) {
     .headerText {
-        font-size: 2rem;
         text-align: center;
         padding-left: 0;
     }

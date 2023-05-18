@@ -15,7 +15,7 @@ export default function MainContent({}): JSX.Element {
         <Education/>,
         <Experience/>,
         <Projects/>,
-        <><p className={"content-text responsive"}>Content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <><p>Content 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
             maiores maxime quia quos reiciendis sequi similique sunt vitae?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi fugit nostrum optio placeat quasi
@@ -23,7 +23,7 @@ export default function MainContent({}): JSX.Element {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate molestias reprehenderit tempora!
             Aliquid, assumenda dolore et eum laborum molestias nisi numquam omnis provident ratione, rem repudiandae
             similique suscipit tenetur vitae.</p></>,
-        <><p className={"content-text responsive"}>Content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <><p>Content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
             maiores maxime quia quos reiciendis sequi similique sunt vitae?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet animi consectetur consequatur
@@ -35,10 +35,10 @@ export default function MainContent({}): JSX.Element {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minima necessitatibus repellat soluta. Alias
             eos facilis nam sunt voluptas voluptatibus. Assumenda consequuntur cupiditate exercitationem nesciunt
             possimus saepe, sunt tempora voluptatem.</p></>,
-        <><p className={"content-text responsive"}>Content 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <><p>Content 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
             maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
-        <><p className={"content-text responsive"}>Content 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <><p>Content 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Aliquam distinctio est ex minima mollitia necessitatibus numquam omnis perspiciatis quisquam. Ipsa iste,
             maiores maxime quia quos reiciendis sequi similique sunt vitae?</p></>,
     ]

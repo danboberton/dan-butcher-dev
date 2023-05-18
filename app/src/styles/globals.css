@@ -9,6 +9,7 @@ html, body{
   padding: 0;
   background-color: rgb(var(--space-gray-rgb));
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 :root {
@@ -21,15 +22,7 @@ html, body{
   --space-gray-rgb: 28,33,55;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-.content-text {
+p {
   font-family: "europa", sans-serif;
   color: rgb(var(--space-white-rgb));
   font-size: 1.25rem;
@@ -74,13 +67,12 @@ li {
 
 @media (width < 600px) {
 
-  .content-text.responsive {
-    font-size: 1rem;
+  html {
+    font-size: 14px;
   }
 
   .content-title.responsive {
     text-align: center;
-    font-size: 1.5rem;
   }
 }
 

@@ -16,7 +16,7 @@ export default function Projects(): JSX.Element {
                                <ul>
                                    <li>Next.js / React Single Page Application</li>
                                    <li>Typescript</li>
-                                   <li>Mobile-First Design</li>
+                                   <li>Mobile-First Responsive Design</li>
                                    <li>All From Scratch</li>
                                    <li>Custom Hamburger Menu for Mobile</li>
                                </ul>

@@ -7,7 +7,7 @@ export default function Experience(): JSX.Element {
     return (
         <>
             <ContentHeader title={"Experience"} icon={<MdWork/>}/>
-            <p className={"content-text responsive"}>Pelco</p>
+            <p>Pelco</p>
         </>
     )
 }

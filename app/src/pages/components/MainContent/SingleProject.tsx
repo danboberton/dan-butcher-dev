@@ -18,11 +18,9 @@ export default function SingleProject({title, description, features, gitURL}: Pr
                 <h3 className={styles.subTitle}>{title}</h3>
                 <IconContext.Provider value={{color: "white", size: "2rem"}}>
                     <div className={styles.gitIconContainer}>
-                        <p className={"content-text responsive"}>
-                            src:
-                        </p>
+
                         <div className={styles.gitButtonContainer}>
-                            <button className={styles.gitButton}>
+                            <button className={styles.gitButton} onClick={()=> window.location.href = gitURL}>
                                 <BsGithub/>
                             </button>
                         </div>
@@ -33,7 +31,7 @@ export default function SingleProject({title, description, features, gitURL}: Pr
 
             </div>
 
-            <p className={"content-text responsive"}> {description}</p>
+            <p> {description}</p>
             <h4 className={styles.feature}>Features:</h4>
             {features}
         </>
