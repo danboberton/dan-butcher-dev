@@ -11,7 +11,7 @@ export default function Projects(): JSX.Element {
         <>
             <ContentHeader title={"Projects"} icon={<BiGitPullRequest/>}/>
             <SingleProject title={"Dan-Butcher.dev"}
-                           description={"This Website"}
+                           description={"I built this website from scratch in next.js"}
                            features={
                                <ul>
                                    <li>Next.js / React Single Page Application</li>
@@ -21,7 +21,8 @@ export default function Projects(): JSX.Element {
                                    <li>Custom Hamburger Menu for Mobile</li>
                                </ul>
                            }
-                           gitURL={"www."}/>
+                           gitURL={"www."}
+                            timeframe={"2023"}/>
         </>
     )
 }

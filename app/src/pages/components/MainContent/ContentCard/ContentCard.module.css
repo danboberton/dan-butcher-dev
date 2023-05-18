@@ -67,11 +67,12 @@
 }
 
 .subTitle {
-    font-family: "eurostile", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     color: rgb(var(--space-white-rgb));
     font-style: italic;
     font-weight: bold;
+    padding-top: .5rem;
+    margin-left: .5rem;
 }
 
 .contentHeaderContainer {
@@ -91,10 +92,12 @@
 }
 
 .feature {
-    padding: 1.25rem;
-    font-size: 1.35rem;
-    font-family: "europa", sans-serif;
+    padding: .25rem;
+    font-size: 1.25rem;
     color: rgb(var(--space-white-rgb));
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
 
 .projectHeaderContainer {
@@ -103,6 +106,7 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: .225rem;
+    align-items: center;
 }
 
 .gitIconContainer {
@@ -128,4 +132,34 @@
     -moz-box-shadow: 4px 4px 3px rgb(var(--space-gray-rgb));
     box-shadow: 4px 4px 3px rgb(var(--space-gray-rgb));
     padding: .5rem;
+}
+
+.pointerContainer {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.timeframeContainer {
+    width: 100%;
+    margin: 0;
+}
+
+.timeframe {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.projectContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.growContainer {
+    flex-grow: 2;
 }

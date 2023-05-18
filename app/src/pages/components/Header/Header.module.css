@@ -13,7 +13,7 @@
     color: rgb(var(--space-white-rgb));
     vertical-align: center;
     font-size: 3rem;
-    font-family: "Fira Code", monospace;
+    font-family: monospace;
     font-weight: normal;
     padding-left: 1rem;
     white-space: nowrap;
@@ -29,6 +29,14 @@
     .headerText {
         text-align: center;
         padding-left: 0;
+    }
+}
+
+@media (width < 450px) {
+    .headerText {
+        text-align: center;
+        padding-left: 0;
+        font-size: 2.5rem;
     }
 }
 

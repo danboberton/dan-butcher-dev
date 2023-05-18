@@ -4,12 +4,14 @@
 
 html, body{
   width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: rgb(var(--space-gray-rgb));
   overflow-x: hidden;
   font-size: 16px;
+  min-width: 300px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 :root {
@@ -23,16 +25,14 @@ html, body{
 }
 
 p {
-  font-family: "europa", sans-serif;
   color: rgb(var(--space-white-rgb));
   font-size: 1.25rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: .5rem;
   text-align: left;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 
 .content-title {
-  font-family: "eurostile", sans-serif;
   font-weight: bold;
   color: rgb(var(--space-white-rgb));
   font-size: 1.75rem;
@@ -58,7 +58,6 @@ ul {
 
 li {
   list-style-type: disc;
-  font-family: "europa", sans-serif;
   color: rgb(var(--space-white-rgb));
   font-size: 1.25rem;
 }
@@ -76,10 +75,29 @@ li {
   }
 }
 
+@media (width < 450px) {
+  html {
+    font-size: 12px;
+  }
+
+  .content-title.responsive {
+    text-align: center;
+  }
+}
+
+@media (width < 300px) {
+  html {
+    font-size: 11px;
+  }
+
+  .content-title.responsive {
+    text-align: center;
+  }
+}
+
 .center-content {
   display: flex;
   justify-content: center;
-  width: 100vw;
   margin: 0;
   padding: 0;
 }
