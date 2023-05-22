@@ -14,8 +14,7 @@ export default function MainContainer({children}: Props) {
             url(${bg.src})`,
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed',
-            backgroundColor: 'rgb(var(--space-black-rgb))',
-            backgroundSize: 'cover'
+            backgroundColor: 'rgb(var(--space-black-rgb))'
         }}>
             {children}
         </div>

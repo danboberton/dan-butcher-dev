@@ -1,6 +1,10 @@
 .mainContainer {
     max-width: 1000px;
     width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @media (width > 1000px) {
