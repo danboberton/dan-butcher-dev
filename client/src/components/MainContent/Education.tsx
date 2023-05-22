@@ -21,7 +21,6 @@ export default function Education(): JSX.Element {
             <div className={styles.eduContainer}>
                 <div>
                     <p className={styles.bold}>Audio Production Certificate<span className={styles.sub}> - Conservatory of Recording Arts and Sciences</span></p>
-                    <p className={styles.subIndent}><span className={styles.italic}>concentration in Software Engineering </span></p>
                 </div>
                 <div className={styles.yearContainer}>
                     <p className={styles.year}>2009</p>
