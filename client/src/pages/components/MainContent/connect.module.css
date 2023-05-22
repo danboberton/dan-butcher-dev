@@ -1,0 +1,8 @@
+.connectContainer {
+    display: block;isplay: flex;
+    justify-content: center;
+}
+
+.socialIcon {
+    margin: 1rem
+}

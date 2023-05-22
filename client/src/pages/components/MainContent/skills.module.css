@@ -1,0 +1,16 @@
+.skill {
+    margin: 0;
+    padding: 0;
+}
+
+.skillContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.skillBox {
+    border: 1px solid rgb(var(--space-white-rgb));
+    border-top-left-radius: .5rem .25rem;
+    padding: .05rem .25rem .05rem .25rem;
+}
