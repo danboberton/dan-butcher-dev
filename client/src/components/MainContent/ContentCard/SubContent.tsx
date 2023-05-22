@@ -1,4 +1,4 @@
-import styles from "@/pages/components/MainContent/ContentCard/ContentCard.module.css";
+import styles from "@/components/MainContent/ContentCard/ContentCard.module.css";
 
 interface Props {
     children: JSX.Element | JSX.Element[]

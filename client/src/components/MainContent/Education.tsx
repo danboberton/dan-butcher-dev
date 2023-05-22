@@ -1,6 +1,6 @@
 import {IoSchoolSharp} from "react-icons/io5";
 import React from "react";
-import ContentHeader from "@/pages/components/MainContent/ContentCard/ContentHeader";
+import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
 import styles from './education.module.css'
 
 

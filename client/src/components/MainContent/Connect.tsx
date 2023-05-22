@@ -1,4 +1,4 @@
-import ContentHeader from "@/pages/components/MainContent/ContentCard/ContentHeader";
+import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
 import {TbPlugConnected} from "react-icons/tb";
 import styles from './connect.module.css'
 import { SocialIcon } from 'react-social-icons';

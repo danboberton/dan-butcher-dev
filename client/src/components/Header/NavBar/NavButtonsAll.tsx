@@ -1,4 +1,4 @@
-import NavButton from "@/pages/components/Header/NavBar/Buttons/NavButton";
+import NavButton from "@/components/Header/NavBar/Buttons/NavButton";
 import React from "react";
 
 export default function NavButtonsAll(): JSX.Element{

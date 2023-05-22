@@ -1,7 +1,7 @@
 import {MdWork} from "react-icons/md";
 import React from "react";
-import ContentHeader from "@/pages/components/MainContent/ContentCard/ContentHeader";
-import styles from "@/pages/components/MainContent/education.module.css";
+import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
+import styles from "@/components/MainContent/education.module.css";
 
 export default function Experience(): JSX.Element {
 

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import NavButtonsAll from "@/pages/components/Header/NavBar/NavButtonsAll";
-import SideBar from "@/pages/components/Header/NavBar/Buttons/SideBar";
-import NavBar from "@/pages/components/Header/NavBar/NavBar";
-import HamburgerButton from "@/pages/components/Header/NavBar/Buttons/HamburgerButton";
+import NavButtonsAll from "@/components/Header/NavBar/NavButtonsAll";
+import SideBar from "@/components/Header/NavBar/Buttons/SideBar";
+import NavBar from "@/components/Header/NavBar/NavBar";
+import HamburgerButton from "@/components/Header/NavBar/Buttons/HamburgerButton";
 
 export interface NavBarContext {
     shouldUseSideBar: boolean,
