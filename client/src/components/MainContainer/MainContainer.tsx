@@ -1,5 +1,5 @@
 import styles from './MainContainer.module.css'
-import bg from '../../imgs/cosmic-cliffs.png'
+import bg from '../../../public/cosmic-cliffs.png'
 
 type Props = {
     children: JSX.Element | JSX.Element[]
