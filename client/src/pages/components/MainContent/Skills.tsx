@@ -30,6 +30,7 @@ import { FaJava, FaReact } from 'react-icons/fa'
 import {IconContext} from "react-icons";
 import {IoBuild} from "react-icons/io5";
 import {TbBrandVscode, TbCloudDataConnection} from "react-icons/tb";
+import {AiTwotoneExperiment} from "react-icons/all";
 
 interface skillIconProps {
     icon: JSX.Element,
@@ -77,7 +78,7 @@ export default function Skills(): JSX.Element {
                     <SkillWithIcon icon={<BsGit/>} text={"git"}/>
                     <SkillWithIcon icon={<SiMongodb/>} text={"MongoDB"}/>
                     <SkillWithIcon icon={<SiJunit5/>} text={"JUnit"}/>
-                    <SkillWithIcon icon={<GrTest/>} text={"Mockito"}/>
+                    <SkillWithIcon icon={<AiTwotoneExperiment/>} text={"Mockito"}/>
                     <SkillWithIcon icon={<SiPytest/>} text={"pytest"}/>
                     <SkillWithIcon icon={<IoBuild/>} text={"Makefile"}/>
                     <SkillWithIcon icon={<SiCmake/>} text={"Cmake"}/>

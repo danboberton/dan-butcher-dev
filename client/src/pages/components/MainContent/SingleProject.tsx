@@ -26,7 +26,7 @@ export default function SingleProject({title, description, features, gitURL, tim
     }
 
     return (
-        <>
+        <div className={styles.projectContainer}>
             <div className={styles.projectHeaderContainer}>
                 <div className={styles.pointerContainer}>
                     <IconContext.Provider value={{color: "white", size: "2rem"}}>
@@ -55,6 +55,6 @@ export default function SingleProject({title, description, features, gitURL, tim
                     {features}
                 </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -12,7 +12,7 @@ export default function Projects(): JSX.Element {
             <div id={"projects"}>
                 <ContentHeader title={"Projects"} icon={<BiGitPullRequest/>}/>
                 <SingleProject title={"Dan-Butcher.dev"}
-                               description={"I built this website from scratch in next.js"}
+                               description={"I built this website from scratch in next.js focusing on mobile-first responsive design."}
                                features={
                                    <ul>
                                        <li>Next.js / React Single Page Application</li>
