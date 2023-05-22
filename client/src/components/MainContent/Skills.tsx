@@ -1,11 +1,11 @@
-import styles from './ContentCard//ContentCard.module.css'
+import styles from './ContentCard/ContentCard.module.css'
 import skillStyles from './skills.module.css'
-import ContentHeader from "@/pages/components/MainContent/ContentCard/ContentHeader";
+import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
 import React from "react";
 import {GiSkills} from "react-icons/gi"
 import {GrMysql, GrTest} from 'react-icons/gr'
 import {DiApple, DiGithubBadge, DiJsBadge, DiLinux, DiSass, DiWindows} from 'react-icons/di'
-import SubContent from "@/pages/components/MainContent/ContentCard/SubContent";
+import SubContent from "@/components/MainContent/ContentCard/SubContent";
 import {
     SiTypescript,
     SiPython,
@@ -26,11 +26,11 @@ import {
     SiAdobecreativecloud
 } from "react-icons/si";
 import {BsFiletypeHtml, BsFiletypeCss, BsGit} from 'react-icons/bs'
-import { FaJava, FaReact } from 'react-icons/fa'
+import {FaJava, FaReact} from 'react-icons/fa'
 import {IconContext} from "react-icons";
 import {IoBuild} from "react-icons/io5";
 import {TbBrandVscode, TbCloudDataConnection} from "react-icons/tb";
-import {AiTwotoneExperiment} from "react-icons/all";
+import {AiTwotoneExperiment} from "react-icons/ai";
 
 interface skillIconProps {
     icon: JSX.Element,
@@ -105,7 +105,8 @@ export default function Skills(): JSX.Element {
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Algorithms</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Design Patterns</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Test Driven Development</p>
-                    <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Continuous Integration / Continuous Deployment</p>
+                    <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Continuous Integration / Continuous
+                        Deployment</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Machine Learning</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Databases</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Software Testing</p>

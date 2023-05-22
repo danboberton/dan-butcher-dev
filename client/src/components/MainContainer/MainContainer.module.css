@@ -2,7 +2,7 @@
     max-width: 1000px;
     width: 100%;
     background-image: radial-gradient(ellipse, rgba(var(--space-black-rgb), 0), rgba(var(--space-black-rgb), 1)),
-    url("../../../imgs/cosmic-cliffs.png");
+    url("../../imgs/cosmic-cliffs.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
 

@@ -1,9 +1,9 @@
-import styles from './ContentCard//ContentCard.module.css'
-import ContentHeader from "@/pages/components/MainContent/ContentCard/ContentHeader";
+import styles from './ContentCard/ContentCard.module.css'
+import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
 import React from "react";
 import {BiGitPullRequest} from "react-icons/bi"
-import SubContent from "@/pages/components/MainContent/ContentCard/SubContent";
-import SingleProject from "@/pages/components/MainContent/SingleProject";
+import SubContent from "@/components/MainContent/ContentCard/SubContent";
+import SingleProject from "@/components/MainContent/SingleProject";
 
 export default function Projects(): JSX.Element {
 

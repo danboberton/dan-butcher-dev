@@ -1,7 +1,7 @@
 import {FaHamburger, FaRegWindowClose} from "react-icons/fa";
 import {IconContext} from "react-icons";
 import React from "react";
-import styles from "@/pages/components/Header/NavBar/Buttons/HamburgerButton.module.css";
+import styles from "@/components/Header/NavBar/Buttons/HamburgerButton.module.css";
 
 interface Props {
     sideBarActive: boolean,

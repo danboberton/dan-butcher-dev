@@ -1,8 +1,8 @@
-import MainContent from "@/pages/components/MainContent/MainContent";
-import Header from "@/pages/components/Header/Header";
-import MainContainer from "@/pages/components/MainContainer/MainContainer";
+import MainContent from "@/components/MainContent/MainContent";
+import Header from "@/components/Header/Header";
+import MainContainer from "@/components/MainContainer/MainContainer";
 import React from "react";
-import useNavBar, {Sidebar, TopNavOrHamburger, NavBarContext} from "@/pages/hooks/useNavBar";
+import useNavBar, {Sidebar, TopNavOrHamburger, NavBarContext} from "@/hooks/useNavBar";
 
 
 export default function Home() {
