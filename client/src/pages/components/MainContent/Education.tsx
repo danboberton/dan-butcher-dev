@@ -6,8 +6,10 @@ export default function Education(): JSX.Element {
 
     return (
         <>
-            <ContentHeader title={"Education"} icon={<IoSchoolSharp/>}/>
-            <p>Bachelors of Computer Science concentration in Software Engineering</p>
+            <div id={"education"}>
+                <ContentHeader title={"Education"} icon={<IoSchoolSharp/>}/>
+                <p>Bachelors of Computer Science concentration in Software Engineering - Colorado State University</p>
+            </div>
         </>
     )
 }

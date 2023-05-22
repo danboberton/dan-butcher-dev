@@ -1,8 +1,7 @@
 import styles from "./Header.module.css"
-import React, {useState, useEffect} from 'react'
-import NavBar from "@/pages/components/Header/NavBar/NavBar";
+import React from 'react'
 
-type Props = {
+interface Props {
     children: JSX.Element
 }
 export default function Header({children}: Props) {

@@ -6,8 +6,10 @@ export default function Experience(): JSX.Element {
 
     return (
         <>
-            <ContentHeader title={"Experience"} icon={<MdWork/>}/>
-            <p>Pelco</p>
+            <div id={"experience"}>
+                <ContentHeader title={"Experience"} icon={<MdWork/>}/>
+                <p>2022-2023 Firmware Engineering Intern - Pelco </p>
+            </div>
         </>
     )
 }

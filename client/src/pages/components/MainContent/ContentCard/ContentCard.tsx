@@ -8,19 +8,19 @@ type Props = {
 export default function ContentCard({children, index}: Props) {
     const getRotateColor = (): string => {
         const colors: { [color: string]: string } = {
-            clear: styles.clearContent,
             blue: styles.blueContent,
             mag: styles.magContent,
+            orange: styles.orangeContent
         }
 
         const numColorCycles: number = Object.keys(colors).length
         switch (index % numColorCycles) {
             case 0:
-                return colors['clear']
+                return colors['mag']
             case 1:
                 return colors['blue']
             case 2:
-                return colors['mag']
+                return colors['orange']
             default:
                 return ""
         }

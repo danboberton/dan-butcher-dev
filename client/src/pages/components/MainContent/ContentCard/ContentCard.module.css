@@ -14,6 +14,10 @@
 }
 
 .magContent {
+    background-color: rgba(var(--space-orange-rgb), .75);
+}
+
+.orangeContent {
     background-color: rgba(var(--space-mag-rgb), .75);
 }
 
@@ -67,12 +71,12 @@
 }
 
 .subTitle {
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     color: rgb(var(--space-white-rgb));
-    font-style: italic;
     font-weight: bold;
     padding-top: .5rem;
     margin-left: .5rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .contentHeaderContainer {
@@ -162,4 +166,5 @@
 
 .growContainer {
     flex-grow: 2;
+    max-width: 700px;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Mono&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +9,10 @@ html, body{
   margin: 0;
   padding: 0;
   background-color: rgb(var(--space-gray-rgb));
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   font-size: 16px;
   min-width: 300px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 
 }
 
@@ -22,6 +24,7 @@ html, body{
   --space-blue-rgb: 34,91,130;
   --space-mag-rgb: 177,100,186;
   --space-gray-rgb: 28,33,55;
+  --space-orange-rgb: 173, 128, 60;
 }
 
 p {

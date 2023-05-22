@@ -1,7 +1,6 @@
 import styles from "@/pages/components/MainContent/ContentCard/ContentCard.module.css";
 import React from "react";
 import {BsGithub} from "react-icons/bs";
-import {FaHandPointRight} from "react-icons/fa";
 import {IconContext} from "react-icons";
 import {IoMdPlanet} from "react-icons/io";
 
@@ -9,11 +8,22 @@ interface Props {
     title: string,
     description: string,
     features: JSX.Element,
-    gitURL: string,
+    gitURL: string | boolean,
     timeframe: string
 }
 
 export default function SingleProject({title, description, features, gitURL, timeframe}: Props): JSX.Element {
+
+    const conditionalButton = (): JSX.Element | null => {
+        if (gitURL !== false) {
+            return (
+                <button className={styles.gitButton} onClick={() => window.location.href = gitURL as string}>
+                    <BsGithub/>
+                </button>)
+        } else {
+            return null
+        }
+    }
 
     return (
         <>
@@ -27,9 +37,7 @@ export default function SingleProject({title, description, features, gitURL, tim
                 <IconContext.Provider value={{color: "white", size: "2rem"}}>
                     <div className={styles.gitIconContainer}>
                         <div className={styles.gitButtonContainer}>
-                            <button className={styles.gitButton} onClick={() => window.location.href = gitURL}>
-                                <BsGithub/>
-                            </button>
+                            {conditionalButton()}
                         </div>
                     </div>
                 </IconContext.Provider>
