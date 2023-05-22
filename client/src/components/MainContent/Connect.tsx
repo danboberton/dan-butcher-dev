@@ -8,9 +8,7 @@ export default function Connect(){
     return(
         <div id={"connect"}>
             <ContentHeader title={"Connect"} icon={<TbPlugConnected/>}/>
-            <p style={{textAlign: 'center'}}>Check me out!</p>
             <div className={styles.connectContainer}>
-
                 <SocialIcon url="https://github.com/danboberton" className={styles.socialIcon}/>
                 <SocialIcon url="https://www.linkedin.com/in/dan-butcher-foco" className={styles.socialIcon}/>
             </div>
