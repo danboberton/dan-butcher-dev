@@ -1,0 +1,42 @@
+.bold {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.italic {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.sub {
+    font-size: 1.15rem;
+    margin: 0;
+    padding: 0
+}
+
+.subIndent {
+    font-size: 1.05rem;
+    margin: 0;
+    padding: 0 0 0 1rem;
+}
+
+.eduContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.yearContainer {
+    display: flex;
+    justify-content: right;
+    flex-grow: 2;
+
+}
+
+.year {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0;
+}

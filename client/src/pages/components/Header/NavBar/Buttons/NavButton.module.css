@@ -1,0 +1,18 @@
+.NavButton {
+    border: 1px solid white;
+    padding: .25rem;
+    margin: .5rem;
+    height: 2.5rem;
+    transition: border-radius .15s;
+    transition-timing-function: ease-out;
+    background-color: rgb(var(--space-black-rgb));
+}
+
+.NavButton:hover {
+    border-radius: 10px;
+}
+
+.buttonText {
+    color: rgb(var(--space-white-rgb));
+    padding: 0;
+}
