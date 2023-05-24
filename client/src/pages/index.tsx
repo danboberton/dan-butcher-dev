@@ -4,14 +4,17 @@ import MainContainer from "@/components/MainContainer/MainContainer";
 import React from "react";
 import useNavBar, {Sidebar, TopNavOrHamburger, NavBarContext} from "@/hooks/useNavBar";
 
-
-export default function Home() {
+interface Props{
+    spec?: string
+}
+export default function Home({spec}: Props) {
     const navBarContext: NavBarContext = useNavBar()
 
     return (
         <main>
             <div className={"center-content"}>
                 <MainContainer>
+                    {spec ? <p>{spec}</p> : <></>}
                     <Header>
                         <TopNavOrHamburger navBarContext={navBarContext}/>
                     </Header>
