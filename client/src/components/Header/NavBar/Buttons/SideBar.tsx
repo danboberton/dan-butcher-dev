@@ -10,9 +10,6 @@ interface Props {
 
 export default function SideBar({children, sideBarActive}: Props): JSX.Element {
 
-    {/*<IconContext.Provider value={{ color: "white", className: "global-class-name" }}>*/
-    }
-
     return (
         <>
             <div className={`${sideBarActive ? styles.sideBarActive : styles.sideBarNavHidden} ${styles.sideBar}`}>
