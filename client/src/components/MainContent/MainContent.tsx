@@ -4,7 +4,7 @@ import About from "@/components/MainContent/About";
 import Skills from "@/components/MainContent/Skills";
 import Education from "@/components/MainContent/Education";
 import Experience from "@/components/MainContent/Experience";
-import Projects from "@/components/MainContent/Projects";
+import Projects from "@/components/MainContent/Projects/Projects";
 import Connect from "@/components/MainContent/Connect";
 
 
