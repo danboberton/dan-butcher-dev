@@ -1,12 +1,9 @@
 .contentCard {
     display: block;
     padding: 1rem 1rem 1rem 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem;
     border-radius: 2rem 2rem / 1rem 6rem;
-    /*backdrop-filter: blur(5px);*/
+    filter: drop-shadow(10px 0px 10px #000000);
 }
 
 .blueContent {
