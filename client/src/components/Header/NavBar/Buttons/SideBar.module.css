@@ -8,7 +8,7 @@
 .sideBarActive {
     opacity: 1;
     visibility: visible;
-    top: 75px;
+    top: 5rem;
     transition: visibility 500ms, opacity 500ms ease-out, top 500ms ease-out;
 }
 
@@ -18,5 +18,6 @@
     position: fixed;
     right: 20px;
     z-index: 1;
+    overflow-y: scroll;
 }
 

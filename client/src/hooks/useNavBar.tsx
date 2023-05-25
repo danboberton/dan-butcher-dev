@@ -36,7 +36,7 @@ export default function useNavBar(): NavBarContext {
 export const UseSideBar = ({navBarContext}: {navBarContext: NavBarContext}): JSX.Element => {
     return (
         <SideBar sideBarActive={navBarContext.sideBarActive}>
-            <NavButtonsAll/>
+            <NavButtonsAll navBarContext={navBarContext}/>
         </SideBar>
     )
 }
@@ -45,7 +45,7 @@ export const UseTopNavBar = (): JSX.Element => {
 
     return (
         <NavBar>
-            <NavButtonsAll/>
+            <NavButtonsAll navBarContext={false}/>
         </NavBar>
     )
 }

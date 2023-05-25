@@ -105,8 +105,7 @@ export default function Skills(): JSX.Element {
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Algorithms</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Design Patterns</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Test Driven Development</p>
-                    <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Continuous Integration / Continuous
-                        Deployment</p>
+                    <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>CI/CD</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Machine Learning</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Databases</p>
                     <p className={`${skillStyles.skill} ${skillStyles.skillBox}`}>Software Testing</p>

@@ -17,7 +17,7 @@ export default function SingleProject({title, description, features, gitURL, tim
     const conditionalButton = (): JSX.Element | null => {
         if (gitURL !== false) {
             return (
-                <button className={styles.gitButton} onClick={() => window.location.href = gitURL as string}>
+                <button className={styles.gitButton} onClick={() => window.open(gitURL as string, "_blank")}>
                     <BsGithub/>
                 </button>)
         } else {
