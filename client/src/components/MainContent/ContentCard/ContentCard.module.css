@@ -10,15 +10,15 @@
 }
 
 .blueContent {
-    background-color: rgba(var(--space-blue-rgb), .75);
+    background-color: rgba(var(--space-blue-rgb), .9);
 }
 
 .magContent {
-    background-color: rgba(var(--space-orange-rgb), .75);
+    background-color: rgba(var(--space-orange-rgb), .9);
 }
 
 .orangeContent {
-    background-color: rgba(var(--space-mag-rgb), .75);
+    background-color: rgba(var(--space-mag-rgb), .9);
 }
 
 .clearContent {
