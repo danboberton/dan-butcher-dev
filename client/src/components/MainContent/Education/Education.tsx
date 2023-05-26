@@ -9,18 +9,29 @@ export default function Education(): JSX.Element {
     return (
         <div id={"education"}>
             <ContentHeader title={"Education"} icon={<IoSchoolSharp/>}/>
-            <div className={styles.eduContainer}>
+            <div className={styles.eduGrid}>
                 <div>
-                    <p className={styles.bold}>Bachelors of Computer Science<span className={styles.sub}> - Colorado State University</span></p>
-                    <p className={styles.subIndent}><span className={styles.italic}>concentration in Software Engineering </span></p>
+                    <p className={styles.bold}>
+                        Bachelors of Computer Science
+                    </p>
+                    <p className={styles.subIndent}>
+                        concentration Software Engineering
+                    </p>
+                </div>
+                <div>
+                    <p className={styles.sub}>Colorado State University</p>
                 </div>
                 <div className={styles.yearContainer}>
                     <p className={styles.year}>May 2023</p>
                 </div>
-            </div>
-            <div className={styles.eduContainer}>
+                {/*ROW*/}
                 <div>
-                    <p className={styles.bold}>Audio Production Certificate<span className={styles.sub}> - Conservatory of Recording Arts and Sciences</span></p>
+                    <p className={styles.bold}>Audio Production Certificate
+
+                    </p>
+                </div>
+                <div>
+                    <p className={styles.sub}>Conservatory of Recording Arts and Sciences</p>
                 </div>
                 <div className={styles.yearContainer}>
                     <p className={styles.year}>2009</p>

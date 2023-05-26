@@ -17,9 +17,10 @@
 }
 
 .subIndent {
-    font-size: 1.05rem;
+    font-size: 1.00rem;
     margin: 0;
-    padding: 0 0 0 1rem;
+    padding: 0;
+    font-style: italic;
 }
 
 .eduContainer {
@@ -29,7 +30,7 @@
 
 .yearContainer {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     flex-grow: 2;
 
 }
@@ -39,4 +40,10 @@
     font-weight: 300;
     font-style: italic;
     padding: 0;
+}
+
+.eduGrid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    gap: 1rem
 }
