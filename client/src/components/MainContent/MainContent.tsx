@@ -3,7 +3,7 @@ import ContentCard from "@/components/MainContent/ContentCard/ContentCard";
 import About from "@/components/MainContent/About";
 import Skills from "@/components/MainContent/Skills";
 import Education from "@/components/MainContent/Education/Education";
-import Experience from "@/components/MainContent/Experience";
+import Experience from "@/components/MainContent/Experience/Experience";
 import Projects from "@/components/MainContent/Projects/Projects";
 import Connect from "@/components/MainContent/Connect";
 

@@ -14,7 +14,7 @@ html, body{
   min-width: 300px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  scroll-padding-top: 8rem;
+  scroll-padding-top: 9.1rem;
 }
 
 :root {
@@ -72,6 +72,7 @@ li {
 
   html {
     font-size: 14px;
+    scroll-padding-top: 6.1rem;
   }
 
   .content-title.responsive {
