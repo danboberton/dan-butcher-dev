@@ -1,6 +1,6 @@
 import NavButton from "@/components/Header/NavBar/Buttons/NavButton";
 import React from "react";
-import {NavBarContext} from "@/hooks/useNavBar";
+import {NavBarContext} from "@/components/Header/NavBar/useNavBar";
 
 interface Props {
     navBarContext: NavBarContext | false

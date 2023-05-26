@@ -23,7 +23,7 @@ import {
     SiPlaywright,
     SiJetbrains,
     SiProtools,
-    SiAdobecreativecloud
+    SiAdobecreativecloud, SiPostman
 } from "react-icons/si";
 import {BsFiletypeHtml, BsFiletypeCss, BsGit} from 'react-icons/bs'
 import {FaJava, FaReact} from 'react-icons/fa'
@@ -76,6 +76,7 @@ export default function Skills(): JSX.Element {
                     <SkillWithIcon icon={<SiJest/>} text={"jest"}/>
                     <SkillWithIcon icon={<SiNodedotjs/>} text={"Node.js"}/>
                     <SkillWithIcon icon={<BsGit/>} text={"git"}/>
+                    <SkillWithIcon icon={<SiPostman/>} text={"Postman"}/>
                     <SkillWithIcon icon={<SiMongodb/>} text={"MongoDB"}/>
                     <SkillWithIcon icon={<SiJunit5/>} text={"JUnit"}/>
                     <SkillWithIcon icon={<AiTwotoneExperiment/>} text={"Mockito"}/>

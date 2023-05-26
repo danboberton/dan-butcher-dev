@@ -2,7 +2,7 @@ import MainContent from "@/components/MainContent/MainContent";
 import Header from "@/components/Header/Header";
 import MainContainer from "@/components/MainContainer/MainContainer";
 import React from "react";
-import useNavBar, {Sidebar, TopNavOrHamburger, NavBarContext} from "@/hooks/useNavBar";
+import useNavBar, {Sidebar, TopNavOrHamburger, NavBarContext} from "@/components/Header/NavBar/useNavBar";
 
 
 export default function Home() {
