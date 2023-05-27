@@ -15,7 +15,9 @@ export default function NavButton({title, link, navBarContext}: Props): JSX.Elem
     }
 
     return (
-        <button onClick={handleClick} className={styles.NavButton}>
+        <button data-testid={`${title}-button`}
+                onClick={handleClick}
+                className={styles.NavButton}>
             <p className={styles.buttonText}>{title}</p>
         </button>
     )

@@ -1,8 +1,6 @@
 import styles from "./NavBar.module.css"
-import NavButton from "@/components/Header/NavBar/Buttons/NavButton";
-import React, {useEffect, useState} from "react";
-import SideBar from "@/components/Header/NavBar/Buttons/SideBar";
-import NavButtonsAll from "@/components/Header/NavBar/NavButtonsAll";
+import React from "react";
+
 
 interface Props {
     children: JSX.Element

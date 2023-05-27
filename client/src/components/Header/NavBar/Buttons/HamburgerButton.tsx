@@ -14,7 +14,7 @@ export default function HamburgerButton({sideBarActive, setSideBarActive}: Props
         <div className={styles.navContainer}>
         <IconContext.Provider value={{color: "white", size: "1.5rem"}}>
             <div>
-                <button onClick={() => {
+                <button data-testid="hamburger-button" onClick={() => {
                     setSideBarActive(!sideBarActive)
                 }}>
                     {sideBarActive? <FaRegWindowClose/> : <FaHamburger/>}
