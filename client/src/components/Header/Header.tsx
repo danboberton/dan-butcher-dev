@@ -7,7 +7,7 @@ interface Props {
 export default function Header({children}: Props) {
 
     return (
-        <header className={`${styles.header}`}>
+        <header className={`${styles.header}`} data-testid="header">
             <div className={styles.titleContainer}>
                 <p className={`${styles.headerText}`}>Dan Butcher.<code>dev</code></p>
             </div>

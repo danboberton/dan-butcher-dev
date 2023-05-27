@@ -1,12 +1,15 @@
 import { test, expect } from '@playwright/test'
 
-test('should navigate to the about page', async ({ page }) => {
+test('should render the header and header should persist though scroll', async ({ page }) => {
   // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
   await page.goto('/')
-  // Find an element with the text 'About Page' and click on it
-  await page.click('text=About Page')
+
+  const header = page.getByTestId("header")
   // The new url should be "/about" (baseURL is used there)
-  await expect(page).toHaveURL('/about')
+  await expect(header).toBeInViewport()
   // The new page should contain an h1 with "About Page"
-  await expect(page.locator('h1')).toContainText('About Page')
-})
+  await page.goto('/#connect')
+
+  await expect(header).toBeInViewport()
+
+});
