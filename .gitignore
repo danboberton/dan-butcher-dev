@@ -130,4 +130,5 @@ dist
 .pnp.*
 
 # playwright
-test-restuls/
+tests/e2e/test-restuls/
+

@@ -20,7 +20,7 @@ export default function MainContent({}): JSX.Element {
     ]
 
     return (
-        <div className={styles.mainContent}>
+        <div className={styles.mainContent} data-testid="main-content">
             {content.map((value: JSX.Element, index: number): JSX.Element => {
                 return (
                     <ContentCard index={index +1} key={`content-${index}`}>
