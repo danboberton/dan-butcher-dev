@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react'
 import Home from '@/pages/index'
 
-describe('Home', () => {
+describe('Home renders basic components', () => {
     beforeEach(() => {
         render(<Home/>)
     })

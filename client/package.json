@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test ./tests/e2e",
+    "test:jest": "jest --verbose ./tests/jest"
   },
   "dependencies": {
     "@types/node": "18.16.3",
