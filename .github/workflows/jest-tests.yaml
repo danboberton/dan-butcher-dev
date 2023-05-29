@@ -11,7 +11,7 @@ on:
 # For more detail on this section visit https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobs
 jobs:
   # ID of the job
-  run-automated-tests:
+  tests:
     timeout-minutes: 10
     # Machine which this action will be run on. For a list of all the machines available/how to run on self hosted machine visit
     # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
