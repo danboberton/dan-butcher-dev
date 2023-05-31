@@ -27,34 +27,30 @@ export default function NavBar(): JSX.Element {
         return () => window.removeEventListener("resize", handleResize)
     }, [])
 
-    const result = () => {
-        if (!shouldUseSideBar) {
-            return (
-                <div className={styles.navContainer}>
-                    <NavButtonsAll setSideBarActive={false}/>
-                </div>
-            )
-        } else {
-            const sideBar =
-                <SideBar sideBarActive={sideBarActive}>
-                    <NavButtonsAll setSideBarActive={setSideBarActive}/>
-                </SideBar>
-            const sidebarPlacement = () => {
-                const mainContainer = document.getElementById('main-container')
-                return mainContainer ? createPortal(sideBar, mainContainer) : null
-            }
-
-            return (
-                <div className={styles.navContainer}>
-                    <HamburgerButton sideBarActive={sideBarActive}
-                                     setSideBarActive={setSideBarActive}/>
-                    {sidebarPlacement()}
-                </div>
-            )
+    if (!shouldUseSideBar) {
+        return (
+            <div className={styles.navContainer}>
+                <NavButtonsAll setSideBarActive={false}/>
+            </div>
+        )
+    } else {
+        const sideBar =
+            <SideBar sideBarActive={sideBarActive}>
+                <NavButtonsAll setSideBarActive={setSideBarActive}/>
+            </SideBar>
+        const sidebarPlacement = () => {
+            const mainContainer = document.getElementById('main-container')
+            return mainContainer ? createPortal(sideBar, mainContainer) : null
         }
-    }
 
-    return result()
+        return (
+            <div className={styles.navContainer}>
+                <HamburgerButton sideBarActive={sideBarActive}
+                                 setSideBarActive={setSideBarActive}/>
+                {sidebarPlacement()}
+            </div>
+        )
+    }
 }
 
 
