@@ -1,6 +1,5 @@
 import NavButton from "@/components/Header/NavBar/Buttons/NavButton";
 import React from "react";
-import {NavBarContext} from "@/components/Header/NavBar/NavBar";
 
 interface Props {
     setSideBarActive: React.Dispatch<React.SetStateAction<boolean>> | false
