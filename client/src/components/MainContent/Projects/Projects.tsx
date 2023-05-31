@@ -11,7 +11,7 @@ export default function Projects(): JSX.Element {
         <div id={"projects"}>
             <ContentHeader title={"Projects"} icon={<BiGitPullRequest/>}/>
             <SingleProject title={"Dan-Butcher.dev"}
-                           description={"I built this website from scratch in next.js focusing on mobile-first responsive design and playwright for cross-browser/cross-viewport testing. I'm currently working on expanding this to include some dynamic content using dynamic routes and server side rendering."}
+                           description={"I built this website from scratch in next.js focusing on mobile-first responsive design, playwright and jest automated cross-browser/cross-viewport testing. I'm currently working on expanding this to include some dynamic content using dynamic routes and server side rendering."}
                            features={
                                <ul>
                                    <li>Next.js / React Single Page Application</li>
