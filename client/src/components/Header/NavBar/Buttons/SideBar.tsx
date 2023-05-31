@@ -12,7 +12,8 @@ export default function SideBar({children, sideBarActive}: Props): JSX.Element {
 
     return (
         <>
-            <div data-testid='sidebar'
+            <div id={'sidebar'}
+                data-testid='sidebar'
                  className={`${sideBarActive ? styles.sideBarActive : styles.sideBarNavHidden} ${styles.sideBar}`}>
                 {children}
             </div>

@@ -1,17 +1,16 @@
 import React from "react";
 import styles from "@/components/Header/NavBar/Buttons/NavButton.module.css";
-import {NavBarContext} from "@/components/Header/NavBar/useNavBar";
 
 type Props = {
     title: string,
     link: string,
-    navBarContext: NavBarContext | false
+    setSideBarActive: React.Dispatch<React.SetStateAction<boolean>> | false
 }
-export default function NavButton({title, link, navBarContext}: Props): JSX.Element {
+export default function NavButton({title, link, setSideBarActive}: Props): JSX.Element {
 
     const handleClick = (): void => {
         window.location.href = link
-        navBarContext ? navBarContext.setSideBarActive(false) : null
+        setSideBarActive ? setSideBarActive(false) : null
     }
 
     return (

@@ -1,20 +1,19 @@
 import NavButton from "@/components/Header/NavBar/Buttons/NavButton";
 import React from "react";
-import {NavBarContext} from "@/components/Header/NavBar/useNavBar";
 
 interface Props {
-    navBarContext: NavBarContext | false
+    setSideBarActive: React.Dispatch<React.SetStateAction<boolean>> | false
 }
-export default function NavButtonsAll({navBarContext}: Props): JSX.Element{
+export default function NavButtonsAll({setSideBarActive}: Props): JSX.Element{
 
     return(
         <>
-            <NavButton title={"About"} link={"#about"} navBarContext={navBarContext}/>
-            <NavButton title={"Skills"} link={"#skills"} navBarContext={navBarContext}/>
-            <NavButton title={"Education"} link={"#education"} navBarContext={navBarContext}/>
-            <NavButton title={"Experience"} link={"#experience"} navBarContext={navBarContext}/>
-            <NavButton title={"Projects"} link={"#projects"} navBarContext={navBarContext}/>
-            <NavButton title={"Connect"} link={"#connect"} navBarContext={navBarContext}/>
+            <NavButton title={"About"} link={"#about"} setSideBarActive={setSideBarActive}/>
+            <NavButton title={"Skills"} link={"#skills"} setSideBarActive={setSideBarActive}/>
+            <NavButton title={"Education"} link={"#education"} setSideBarActive={setSideBarActive}/>
+            <NavButton title={"Experience"} link={"#experience"} setSideBarActive={setSideBarActive}/>
+            <NavButton title={"Projects"} link={"#projects"} setSideBarActive={setSideBarActive}/>
+            <NavButton title={"Connect"} link={"#connect"} setSideBarActive={setSideBarActive}/>
         </>
     )
 }

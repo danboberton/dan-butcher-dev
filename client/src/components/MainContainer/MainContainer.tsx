@@ -7,7 +7,7 @@ type Props = {
 export default function MainContainer({children}: Props) {
 
     return (
-        <div className={styles.mainContainer}>
+        <div className={styles.mainContainer} id={"main-container"}>
             {children}
         </div>
     )
