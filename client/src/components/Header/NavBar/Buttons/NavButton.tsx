@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@/components/Header/NavBar/Buttons/NavButton.module.css";
-import {NavBarContext} from "@/components/Header/NavBar/NavBar";
 
 type Props = {
     title: string,
