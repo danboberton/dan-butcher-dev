@@ -6,6 +6,7 @@ import Education from "@/components/MainContent/Education/Education";
 import Experience from "@/components/MainContent/Experience/Experience";
 import Projects from "@/components/MainContent/Projects/Projects";
 import Connect from "@/components/MainContent/Connect";
+import Login from "@/components/Auth/login";
 
 
 export default function MainContent({}): JSX.Element {
@@ -16,7 +17,8 @@ export default function MainContent({}): JSX.Element {
         <Education key={'education'}/>,
         <Experience key={'experience'}/>,
         <Projects key={'projects'}/>,
-        <Connect key={'connect'}/>
+        <Connect key={'connect'}/>,
+        <Login/>
     ]
 
     return (
