@@ -1,6 +1,6 @@
 import styles from "./MainContent.module.css"
 import ContentCard from "@/components/MainContent/ContentCard/ContentCard";
-import About from "@/components/MainContent/About";
+import About from "@/components/MainContent/About/About";
 import Skills from "@/components/MainContent/Skills";
 import Education from "@/components/MainContent/Education/Education";
 import Experience from "@/components/MainContent/Experience/Experience";
@@ -17,6 +17,7 @@ export default function MainContent({}): JSX.Element {
         <Skills key={'skills'}/>,
         <Education key={'education'}/>,
         <Experience key={'experience'}/>,
+        <Planning key={'planning'}/>,
         <Projects key={'projects'}/>,
         <Connect key={'connect'}/>,
         <Login/>

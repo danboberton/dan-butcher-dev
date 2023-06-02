@@ -1,11 +1,12 @@
-import { withSessionRoute } from "../../components/Auth/withSession";
+import { withSessionRoute } from "@/components/Auth/withSession";
+import { NextApiRequest, NextApiResponse } from 'next'
 
 const VALID_EMAIL = "test@gmail.com";
 const VALID_PASSWORD = "password";
 
 export default withSessionRoute(createSessionRoute);
 
-async function createSessionRoute(req, res) {
+async function createSessionRoute(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === "POST") {
         const { email, password } = req.body;
 
