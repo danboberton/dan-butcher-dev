@@ -39,5 +39,7 @@ jobs:
       - name: Run Jest Tests
         env:
           DB_USER: ${{ secrets.DB_USER }}
+          DB_PASS: ${{ secrets.DB_PASS }}
+          WORD_DB: ${{ secrets.WORD_DB }}
         working-directory: ./client
         run: npm run test:jest
