@@ -1,11 +1,12 @@
 import {MongoClient, ServerApiVersion} from 'mongodb'
+import {getConnectionString} from "../../../src/lib/database/database.config";
 
 describe('Able to connect to Database', () => {
     it('is able to ping the database', () => {
         const user = process.env.DB_USER
         const pass = process.env.DB_PASS
         const db = process.env.WORD_DB
-        const uri = `mongodb+srv://${user}:${pass}@cluster0.mglvzsy.mongodb.net/?retryWrites=true&w=majority`
+        const uri = getConnectionString(user, pass)
 
         const client = new MongoClient(uri, {
             serverApi: {
