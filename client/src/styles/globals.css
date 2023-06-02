@@ -26,6 +26,8 @@ html, body{
   --space-mag-rgb: 177,100,186;
   --space-gray-rgb: 28,33,55;
   --space-orange-rgb: 173, 128, 60;
+  --space-pink-rgb: 255, 0, 232;
+
 }
 
 p {
@@ -36,19 +38,29 @@ p {
   line-height: 1.75rem;
 }
 
+a {
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color .15s ease-in-out;
+}
+
+a:hover {
+  color: rgb(var(--space-gray-rgb))
+}
+
 .content-title {
   font-weight: bold;
   color: rgb(var(--space-white-rgb));
   font-size: 1.75rem;
   text-align: center;
   display: block;
-  filter: drop-shadow(6px 6px 3px rgb(var(--space-gray-rgb)));
+  filter: drop-shadow(5px 5px 3px rgba(var(--space-gray-rgb), .75));
 }
 
 .emphasis {
   /*font-style: italic;*/
   font-weight: 400;
-  filter: drop-shadow(4px 4px 3px rgb(var(--space-gray-rgb)));
+  filter: drop-shadow(4px 4px 3px rgba(var(--space-gray-rgb), .5));
 }
 
 code {
