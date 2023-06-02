@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Roboto+Mono&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +11,7 @@ html, body{
   overflow-x: clip;
   font-size: 16px;
   min-width: 300px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   scroll-padding-top: 9.1rem;
 }
@@ -26,6 +25,8 @@ html, body{
   --space-mag-rgb: 177,100,186;
   --space-gray-rgb: 28,33,55;
   --space-orange-rgb: 173, 128, 60;
+  --space-pink-rgb: 255, 0, 232;
+
 }
 
 p {
@@ -36,19 +37,29 @@ p {
   line-height: 1.75rem;
 }
 
-.content-title {
-  font-weight: bold;
-  color: rgb(var(--space-white-rgb));
-  font-size: 1.75rem;
-  text-align: center;
-  display: block;
-  filter: drop-shadow(6px 6px 3px rgb(var(--space-gray-rgb)));
+a {
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color .15s ease-in-out;
 }
 
-.emphasis {
-  /*font-style: italic;*/
-  font-weight: 400;
-  filter: drop-shadow(4px 4px 3px rgb(var(--space-gray-rgb)));
+a:hover {
+  color: rgb(var(--space-gray-rgb))
+}
+
+.content-title {
+  font-weight: 600;
+  color: rgb(var(--space-white-rgb));
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  /*filter: drop-shadow(5px 5px 3px rgba(var(--space-gray-rgb), 0));*/
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
+  /*filter: drop-shadow(4px 4px 3px rgba(var(--space-gray-rgb), .5));*/
 }
 
 code {

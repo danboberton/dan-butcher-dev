@@ -1,4 +1,4 @@
-import styles from "@/components/MainContent/ContentCard/ContentCard.module.css";
+import styles from "@/components/MainContent/ContentCard/content-card.module.css";
 import React from "react";
 import {BsGithub} from "react-icons/bs";
 import {IconContext} from "react-icons";

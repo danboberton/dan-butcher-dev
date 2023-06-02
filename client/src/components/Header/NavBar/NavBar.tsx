@@ -9,7 +9,7 @@ export default function NavBar(): JSX.Element {
     const [shouldUseSideBar, setShouldUseNavBar] = useState(false)
     const [sideBarActive, setSideBarActive] = useState(false)
 
-    const SIDEBAR_THRESHOLD: number = 600
+    const SIDEBAR_THRESHOLD: number = 750
 
 
     useEffect(() => {

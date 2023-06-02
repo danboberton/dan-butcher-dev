@@ -12,6 +12,7 @@ export default function NavButtonsAll({setSideBarActive}: Props): JSX.Element{
             <NavButton title={"Skills"} link={"#skills"} setSideBarActive={setSideBarActive}/>
             <NavButton title={"Education"} link={"#education"} setSideBarActive={setSideBarActive}/>
             <NavButton title={"Experience"} link={"#experience"} setSideBarActive={setSideBarActive}/>
+            <NavButton title={"Forward"} link={"#planning"} setSideBarActive={setSideBarActive}/>
             <NavButton title={"Projects"} link={"#projects"} setSideBarActive={setSideBarActive}/>
             <NavButton title={"Connect"} link={"#connect"} setSideBarActive={setSideBarActive}/>
         </>
