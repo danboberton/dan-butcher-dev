@@ -37,5 +37,7 @@ jobs:
         run: npm install
 
       - name: Run Jest Tests
+        env:
+          DB_USER: ${{ secrets.DB_USER }}
         working-directory: ./client
         run: npm run test:jest
