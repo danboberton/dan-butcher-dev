@@ -6,7 +6,7 @@ describe('Able to connect to Database', () => {
         const pass = process.env.DB_PASS
         const db = process.env.WORD_DB
         const uri = `mongodb+srv://${user}:${pass}@cluster0.mglvzsy.mongodb.net/?retryWrites=true&w=majority`
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+
         const client = new MongoClient(uri, {
             serverApi: {
                 version: ServerApiVersion.v1,
