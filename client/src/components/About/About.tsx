@@ -15,7 +15,7 @@ export default function About(): JSX.Element {
                     talented  artists and state of the art technology. This high pressure work environment taught me to {""}
                     troubleshoot under pressure and work successfully in team environments to achieve our goals in {""}
                     extremely diverse conditions. It also forged my deep appreciation of the intersection of technology {""}
-                    and art. <span className={"emphasis"}>I love designing and building solutions to problems.</span></p>
+                    and art. <em>I love designing and building solutions to problems.</em></p>
             </div>
 
         </div>

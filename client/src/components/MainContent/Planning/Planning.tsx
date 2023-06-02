@@ -13,7 +13,7 @@ export default function Planning(): JSX.Element {
                     But I'm also heavily focused on developing my portfolio projects to hone my skills and continue learning. {""}
                     My main focus at the moment is this website. I have no shortage of ideas about how to expand and improve {""}
                     the features of this site and I'm enthusiastic about software project planning, so I'm {""}
-                    <span className={"emphasis"}>using github Projects to roadmap feature development</span> on this site. {""}
+                    <em>using github Projects to roadmap feature development</em> on this site. {""}
                     <a href={"https://github.com/users/danboberton/projects/4"}>Check it out!</a> {""}
                     I'm planning out my weeks as milestones and estimating story points to make weekly goals.
                 </p>
