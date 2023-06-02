@@ -1,5 +1,6 @@
 import { withSessionRoute } from "@/components/Auth/withSession";
 import { NextApiRequest, NextApiResponse } from 'next'
+import type {User} from './user'
 
 const VALID_EMAIL = "test@gmail.com";
 const VALID_PASSWORD = "password";
@@ -14,7 +15,7 @@ async function createSessionRoute(req: NextApiRequest, res: NextApiResponse) {
             req.session.user = {
                 username: "test@gmail.com",
                 isAdmin: true
-            };
+            } as User
             await req.session.save();
             res.send({ ok: true });
         }
