@@ -1,4 +1,4 @@
-import styles from './ContentCard.module.css'
+import styles from './content-card.module.css'
 
 type Props = {
     index: number,

@@ -1,4 +1,4 @@
-import styles from './ContentCard/ContentCard.module.css'
+import styles from './ContentCard/content-card.module.css'
 import skillStyles from './skills.module.css'
 import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
 import React from "react";

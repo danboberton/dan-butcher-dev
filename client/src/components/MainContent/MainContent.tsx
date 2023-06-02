@@ -7,6 +7,7 @@ import Experience from "@/components/MainContent/Experience/Experience";
 import Projects from "@/components/MainContent/Projects/Projects";
 import Connect from "@/components/MainContent/Connect";
 import Login from "@/components/Auth/login";
+import Planning from "@/components/MainContent/Planning/Planning"
 
 
 export default function MainContent({}): JSX.Element {
