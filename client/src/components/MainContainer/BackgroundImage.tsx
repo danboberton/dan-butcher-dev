@@ -13,6 +13,7 @@ export default function BackgroundImage({image}: Props){
                 alt={'NASA Pillars of Creation'}
                 quality={100}
                 fill
+                loading={'eager'}
                 sizes={'100%'}
                 style={{
                     objectFit: 'cover'
