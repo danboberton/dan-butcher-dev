@@ -7,8 +7,6 @@ import Experience from "@/components/MainContent/Experience/Experience";
 import Projects from "@/components/MainContent/Projects/Projects";
 import Connect from "@/components/MainContent/Connect";
 import Planning from "@/components/MainContent/Planning/Planning"
-import Image from 'next/image'
-
 
 export default function MainContent({}): JSX.Element {
 
@@ -24,12 +22,6 @@ export default function MainContent({}): JSX.Element {
 
     return (
         <div className={styles.mainContent} data-testid="main-content">
-            {/*<Image*/}
-            {/*    src={'/pillars.png'}*/}
-            {/*    alt={'NASA Pillars of Creation'}*/}
-            {/*    width={1000}*/}
-            {/*    height={1000}*/}
-            {/*    className={styles.backgroundImage}/>*/}
             {content.map((value: JSX.Element, index: number): JSX.Element => {
                 return (
                     <ContentCard index={index + 1} key={`content-${index}`}>
