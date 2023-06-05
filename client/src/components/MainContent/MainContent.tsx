@@ -8,7 +8,6 @@ import Projects from "@/components/MainContent/Projects/Projects";
 import Connect from "@/components/MainContent/Connect";
 import Planning from "@/components/MainContent/Planning/Planning"
 
-
 export default function MainContent({}): JSX.Element {
 
     const content: JSX.Element[] = [
@@ -25,7 +24,7 @@ export default function MainContent({}): JSX.Element {
         <div className={styles.mainContent} data-testid="main-content">
             {content.map((value: JSX.Element, index: number): JSX.Element => {
                 return (
-                    <ContentCard index={index +1} key={`content-${index}`}>
+                    <ContentCard index={index + 1} key={`content-${index}`}>
                         {value}
                     </ContentCard>
                 )
