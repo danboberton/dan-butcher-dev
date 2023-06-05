@@ -1,7 +1,7 @@
 import {AiOutlineLineChart} from "react-icons/ai";
 import React from "react";
 import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
-import styles from &#39;./planning.module.css&#39;
+import styles from './planning.module.css';
 
 export default function Planning(): JSX.Element {
 
