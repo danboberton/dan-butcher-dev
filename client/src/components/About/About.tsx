@@ -2,6 +2,7 @@ import {FaGrav} from "react-icons/fa";
 import React from "react";
 import ContentHeader from "@/components/MainContent/ContentCard/ContentHeader";
 import styles from './about.module.css'
+import Image from "next/image";
 
 export default function About(): JSX.Element {
 
@@ -9,6 +10,9 @@ export default function About(): JSX.Element {
         <div id={"about"}>
             <ContentHeader title={"Hi, I'm Dan!"} icon={<FaGrav/>}/>
             <div className={styles.aboutContainer}>
+                <div className={styles.headshotContainer}>
+                    <Image src={'/headshot.jpeg'} alt={'Headshot of Dan'} width={100} height={100}/>
+                </div>
                 <p>I wrote my first code when I was 8 years old, copying some BASIC
                     from my favorite magazine, 3-2-1 Contact. I have been obsessed with technology ever since. In my {""}
                     previous career I enjoyed a successful decade in the music and video industry, working with {""}
