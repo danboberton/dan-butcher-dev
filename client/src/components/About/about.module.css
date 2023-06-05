@@ -1,7 +1,32 @@
 .aboutContainer {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.aboutContainer p{
+.aboutContainer p {
     text-align: justify;
+}
+
+.headshotContainer {
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow {
+    /*padding: .5rem;*/
+    filter: drop-shadow(5px 0px 10px rgba(0 0 0 / .5));
+}
+
+.headshot {
+    display: inline;
+    clip-path: circle(7rem at 50%);
+    width: 15rem;
+}
+
+.me {
+    flex-shrink: 4;
 }
