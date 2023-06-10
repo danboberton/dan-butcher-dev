@@ -3,9 +3,11 @@ import Header from "@/components/Header/Header";
 import MainContainer from "@/components/MainContainer/MainContainer";
 import React from "react";
 import NavBar from "@/components/Header/NavBar/NavBar";
+import {useVisitorTracker} from "@/lib/database/visitorTracker";
 
 
 export default function Home() {
+    useVisitorTracker()
 
     return (
         <main>
