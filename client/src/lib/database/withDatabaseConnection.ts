@@ -1,8 +1,10 @@
-const {MongoClient, ServerApiVersion} = require("mongodb");
-const {getConnectionString} = require("./database.config");
+import {Collection, MongoClient, ServerApiVersion} from "mongodb"
+import {getConnectionString} from "./database.config"
+import {dbResponseParams} from "@/pages/api/dbResponse";
 
+type Callback = <T extends dbResponseParams>(t: Collection<Document>) => T;
 
-export async function withDatabaseConnection(callback: Function, database: string, collection: string) {
+export async function withDatabaseConnection<T extends dbResponse>(callback: Callback, database: string, collection: string): Promise<T> {
 
     const user = process.env.DB_USER
     const pass = process.env.DB_PASS
@@ -14,7 +16,6 @@ export async function withDatabaseConnection(callback: Function, database: strin
             deprecationErrors: true,
         }
     });
-
     try {
         const databaseMongo = client.db(database);
         const collectionMongo = databaseMongo.collection(collection);
