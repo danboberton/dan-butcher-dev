@@ -2,6 +2,10 @@ import {useEffect} from "react";
 
 const VISITOR_KEY = 'VISITOR'
 
+interface visitorID {
+    readonly visitorID: string | null
+}
+
 function isNewVisitor(id: string): boolean {
     return true
 }
@@ -9,7 +13,7 @@ function isNewVisitor(id: string): boolean {
 import {withDatabaseConnection} from "@/lib/database/withDatabaseConnection";
 
 
-function getVisitorIDfromCookie(): string | null {
+function getVisitorIDfromCookie(): visitorID {
     const cookieDough = decodeURIComponent(document.cookie).split(';')
     console.log(`type: ${typeof cookieDough} dough: ${JSON.stringify(cookieDough)}`)
     for (let i = 0; i < cookieDough.length; i++) {
@@ -28,26 +32,30 @@ function encryptCookie(input: string): string {
 
 }
 
+function trackVisitor(visitorID: vivistorID): void {
+    const config = {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        mode: "no-cors", // no-cors, *cors, same-origin
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify({visitorID: visitorID})
+    }
+    fetch('/api/registerVisit', config)
+        .then((res)=>res.json())
+        .then((data) => console.log(`Response: ${JSON.stringify(data)}`))
+        .catch((err) => console.log(`Error in registerVisit fetch ${err.stack}`))
+}
+
 export function useVisitorTracker(): void {
     useEffect(() => {
         const visitorID = getVisitorIDfromCookie()
         console.log(`visitorID: ${JSON.stringify(visitorID)}`)
         if (visitorID) {
-            const config = {
-                method: "POST", // *GET, POST, PUT, DELETE, etc.
-                // mode: "no-cors", // no-cors, *cors, same-origin
-                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-                credentials: "same-origin", // include, *same-origin, omit
-                headers: {
-                    "Content-Type": "application/json",
-                    // 'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: JSON.stringify({visitorID: visitorID})
-            }
-            fetch('/api/registerVisit', config)
-                .then((res)=>res.json())
-                .then((data) => console.log(`Response: ${JSON.stringify(data)}`))
-                .catch((err) => console.log(`Error in registerVisit fetch ${err.stack}`))
+
         }
 
         return () => {

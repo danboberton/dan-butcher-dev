@@ -4,10 +4,19 @@ import {dbResponseParams} from "@/pages/api/dbResponse";
 
 type Callback = <T extends dbResponseParams>(t: Collection<Document>) => T;
 
-export async function withDatabaseConnection<T extends dbResponse>(callback: Callback, database: string, collection: string): Promise<T> {
+interface withDatabaseConnectionParams<T> {
+    callback: Callback
+    readonly database: string
+    readonly collection: string
+}
 
-    const user = process.env.DB_USER
-    const pass = process.env.DB_PASS
+export async function withDatabaseConnection<T extends dbResponse>
+                        ({callback, database, collection}: withDatabaseConnectionParams): Promise<T> {
+    const user: string | undefined = process.env.DB_USER
+    const pass: string | undefined = process.env.DB_PASS
+    if(!user || !pass){
+        throw new Error("Missing environmental variable for database User or Password")
+    }
     const uri = getConnectionString(user, pass)
     const client = new MongoClient(uri, {
         serverApi: {
