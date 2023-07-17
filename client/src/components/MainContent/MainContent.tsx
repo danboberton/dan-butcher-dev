@@ -15,7 +15,6 @@ export default function MainContent({}): JSX.Element {
         <Skills key={'skills'}/>,
         <Education key={'education'}/>,
         <Experience key={'experience'}/>,
-        <Planning key={'planning'}/>,
         <Projects key={'projects'}/>,
         <Connect key={'connect'}/>
     ]
