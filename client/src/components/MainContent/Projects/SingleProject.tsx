@@ -14,14 +14,14 @@ interface Props {
 
 export default function SingleProject({title, description, features, gitURL, timeframe}: Props): JSX.Element {
 
-    const conditionalButton = (): JSX.Element | null => {
+    const conditionalButton = (): JSX.Element => {
         if (gitURL !== false) {
             return (
                 <button className={styles.gitButton} onClick={() => window.open(gitURL as string, "_blank")}>
                     <BsGithub/>
                 </button>)
         } else {
-            return null
+            return <div className={styles.gitButton} style={{visibility: "hidden"}}></div>
         }
     }
 
