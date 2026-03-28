@@ -8,11 +8,21 @@ export default function Projects(): JSX.Element {
     return (
         <div id={"projects"}>
             <ContentHeader title={"Projects"} icon={<BiGitPullRequest/>}/>
+            <SingleProject title={"Security Camera Firmware"}
+                           description={"Developing new products for Motorola Solutions, Inc. fixed video."}
+                           features={
+                               <ul>
+                                   <li>Imaging</li>
+                                   <li>Embedded linux</li>
+                                   <li>Bare metal MCU</li>
+                                   <li>React / Vite frontend</li>
+                               </ul>
+                           }
+                           gitURL={false}
+                           timeframe={"2026"}/>
             <SingleProject title={"Dan-Butcher.dev"}
                            description={"I built this website from scratch in next.js focusing on mobile-first responsive" +
-                               "design, playwright and jest automated cross-browser/cross-viewport testing. I'm currently" +
-                               "working on expanding this to include some dynamic content using dynamic routes and" +
-                               "server side rendering."}
+                               "design, playwright and jest automated cross-browser/cross-viewport testing."}
                            features={
                                <ul>
                                    <li>Next.js / React Single Page Application</li>
@@ -20,8 +30,6 @@ export default function Projects(): JSX.Element {
                                    <li>Mobile-First Responsive Design</li>
                                    <li>All From Scratch</li>
                                    <li>Custom Hamburger Menu for Mobile</li>
-                                   <li><a href={"https://github.com/users/danboberton/projects/4"}>github Projects</a> {""}
-                                       planning for feature development</li>
                                </ul>
                            }
                            gitURL={"https://github.com/danboberton/dan-butcher-dev"}
